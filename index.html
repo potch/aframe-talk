@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Browsers in the Third Dimension!</title>
+    <meta name="description" content="Possibly the most insightful presentation of all time" />
+
+    <link rel="stylesheet" href="decky.css">
+    <link rel="stylesheet" href="solarized-dark.css">
+    <link rel="stylesheet" href="truecrimes_regular_macroman/stylesheet.css">
+    <script src="highlight.min.js"></script>
+    <style>
+      .filmtitle {
+        font-family: 'true_crimesregular';
+        perspective: 30vh;
+        transform-style: preserve-3d;
+        text-align: center;
+        line-height: 1em;
+        font-size: 2em;
+      }
+      .filmtitle > div {
+        transform:  rotateY(5deg) skewY(-7deg) translate3d(.8em, -.5em, 0em) ;
+        white-space: nowrap;
+      }
+      .filmtitle span {
+        display: inline-block;
+        font-size: 1.1em;
+        transform: translateY(.2em);
+      }
+      .filmtitle > div > div:nth-child(n+2) {
+        text-shadow: .05em 0 0 rgba(255,0,0,.5),
+                     -.05em 0 0 rgba(0,255,255,.8);
+      }
+      .filmtitle i {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+
+    <section>
+      <div class="filmtitle" style="position: relative; z-index: 1">
+        <div>
+          <div style="font-size: .8em; margin-bottom:0em;transform: translateX(-.3em);">
+            Browsers
+            <i style="font-size: .8em; display: inline-block; transform: translateY(-.2em) rotate(-10deg)">-in the-</i>
+          </div>
+          <div style="font-size: 1.6em; transform:translateX(-1.6em); margin-bottom: .2em;"><span>T</span>hird</div>
+          <div style="font-size: 2em;transform:translateX(.25em)"><span>D</span>imension</div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <img src="img/moz-logo.svg" style="max-width: 80vw;">
+    </section>
+    <section>
+      <img src="img/zuck-vr.jpg">
+    </section>
+    <section>
+      <img src="img/webkit.png">
+      <h1>2004</h1>
+    </section>
+    <section>
+      <h2><code>&lt;canvas></code></h2>
+    </section>
+    <section>
+      <h2><code>getContext('2d')</code></h2>
+    </section>
+    <section>
+      <h1><code>'2d'</code></h1>
+    </section>
+    <section>
+      <h1><code>'3d' ?</code></h1>
+    </section>
+    <section>
+      <h1><code>'webgl'</code></h1>
+    </section>
+    <section>
+      <img style="width: 80%" src="img/WebGL_Logo.png">
+    </section>
+    <section>
+      <img style="width: 74%" src="img/OpenGL_Logo.png">
+    </section>
+    <section>
+      <iframe class="cani" src="http://caniuse.com/webgl/embed"></iframe>
+    </section>
+    <section>
+      <iframe class="zoom-1-5" src="https://www.shadertoy.com/embed/XdsGDB?gui=true&t=10&paused=false&muted=false"></iframe>
+    </section>
+    <section>
+      <h2>WebGL</h2>
+      <iframe src="basic-webgl.html"></iframe>
+    </section>
+    <section>
+      <h2>WebGL</h2>
+      <pre><code data-src="js/basic-webgl.js"></code></pre>
+    </section>
+    <section>
+      <h2>WebGL</h2>
+      <pre><code data-src="js/shaders.html"></code></pre>
+    </section>
+    <section>
+      <h2>Three.js</h2>
+      <iframe src="basic-threejs.html"></iframe>
+    </section>
+    <section>
+      <h2>Three.js</h2>
+      <pre><code data-src="js/basic-threejs.js"></code></pre>
+    </section>
+    <section>
+      <h2>A-Frame</h2>
+      <iframe src="basic-aframe.html"></iframe>
+    </section>
+    <section>
+      <h2>A-Frame</h2>
+      <pre><code>&lt;a-scene>
+  &lt;a-cube position="0 2 0" color="#4CC3D9"
+          width="2" height="2" depth="2">
+    &lt;a-animation attribute="rotation"
+                 to="360 1080 0"
+                 dur="10000"
+                 easing="linear"
+                 repeat="indefinite">
+    &lt;/a-animation>
+  &lt;/a-cube>
+  &lt;a-sky color="#888888">&lt;/a-sky>
+&lt;/a-scene></code></pre>
+    </section>
+    <section>
+      <img style="width:80%" src="img/aframe-name.svg">
+    </section>
+    <section>
+      <img src="img/wclogo.svg">
+      <h2>Web Components</h2>
+    </section>
+    <section>
+      <img src="img/customelements.svg">
+      <h2>Custom Elements</h2>
+    </section>
+    <section style="font-size: 2em">
+      <code>&lt;a-scene></code>
+      <h2>☟</h2>
+      <code>new THREE.Scene()</code>
+    </section>
+    <section style="font-size: 2em">
+      <code>&lt;a-cube></code>
+      <h2>☟</h2>
+      <code>THREE.BoxGeometry</code>
+      <code>THREE.MeshLambertMaterial</code>
+      <code>THREE.Mesh</code>
+    </section>
+    <section>
+      <div class="stack" style="width:15em">
+        <div style="background: rgba(239, 45, 94, .4)">A-Frame</div>
+        <div style="background: rgba(103, 58, 183, .4)">Custom Elements</div>
+        <div style="background: rgba(33, 148, 206, .4)">Three.js</div>
+        <div style="background: rgba(0, 128, 0, .4)">
+          <div>WebGL</div>
+          <div>WebVR</div>
+          <div>Gamepad</div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h1>WebVR</h1>
+    </section>
+    <section>
+      <iframe class="zoom-0-75" style="background: #fff" src="https://webvr.rocks/">
+      </iframe>
+    </section>
+    <section>
+      <h2>Double Vision</h2>
+    </section>
+    <section>
+      <h2><s>Double</s> Vision</h2>
+    </section>
+    <section>
+      <h2>Binocular Vision</h2>
+    </section>
+    <section>
+      <h2>🎥</h2>
+      <img src="img/single-camera.png">
+    </section>
+    <section>
+      <h2>🎥 🎥</h2>
+      <img src="img/two-camera.png">
+    </section>
+    <section>
+      <h3><code>navigator.getVRDisplays()</code></h3>
+    </section>
+    <section>
+      <h1>👁← PD →👁</h1>
+    </section>
+    <section>
+      <h2><code>VRDisplay</code></h2>
+      <pre><code>var eyeParamsL = vrDisplay.getEyeParameters('left');
+var eyeParamsR = vrDisplay.getEyeParameters('right');
+</code></pre>
+    </section>
+    <section>
+      <h3><code>navigator.getGamepads()</code></h3>
+      <pre><code>let vrGamepads = navigator.getGamepads().filter(g => g && g.pose);
+
+
+vrGamepads[0].pose.position // 3d vector
+vrGamepads[0].pose.orientation // Quaternion
+</code></pre>
+    </section>
+    <section>
+      <h2><code>THREE.VREffect</code></h2>
+    </section>
+    <section>
+      <h2>Primitives</h2>
+    </section>
+    <section>
+      <h2>Primitives</h2>
+      <p>
+        <code style="display: inline-block">&lt;a-box></code>
+        <code style="display: inline-block">&lt;a-camera></code>
+        <code style="display: inline-block">&lt;a-circle></code>
+        <code style="display: inline-block">&lt;a-collada-model></code>
+        <code style="display: inline-block">&lt;a-cone></code>
+        <code style="display: inline-block">&lt;a-cursor></code>
+        <code style="display: inline-block">&lt;a-curvedimage></code>
+        <code style="display: inline-block">&lt;a-cylinder></code>
+        <code style="display: inline-block">&lt;a-dodecahedron></code>
+        <code style="display: inline-block">&lt;a-gltf-model></code>
+        <code style="display: inline-block">&lt;a-icosahedron></code>
+        <code style="display: inline-block">&lt;a-image></code>
+        <code style="display: inline-block">&lt;a-light></code>
+        <code style="display: inline-block">&lt;a-obj-model></code>
+        <code style="display: inline-block">&lt;a-octahedron></code>
+        <code style="display: inline-block">&lt;a-plane></code>
+        <code style="display: inline-block">&lt;a-ring></code>
+        <code style="display: inline-block">&lt;a-sky></code>
+        <code style="display: inline-block">&lt;a-sound></code>
+        <code style="display: inline-block">&lt;a-sphere></code>
+        <code style="display: inline-block">&lt;a-tetrahedron></code>
+        <code style="display: inline-block">&lt;a-text></code>
+        <code style="display: inline-block">&lt;a-torus-knot></code>
+        <code style="display: inline-block">&lt;a-torus></code>
+        <code style="display: inline-block">&lt;a-video></code>
+        <code style="display: inline-block">&lt;a-videosphere></code>
+      </p>
+    </section>
+    <section>
+      <img src="img/more-power.png">
+    </section>
+    <section>
+      <h1><code>&lt;a-entity></code></h1>
+    </section>
+    <section>
+      <pre><code>&lt;a-sphere radius="4" color="#FC0">&lt;a-sphere></code></pre>
+      <h2>☟</h2>
+      <pre><code>&lt;a-entity geometry="primitive: sphere;
+                    radius: 4;"
+          material="color: #FC0;">&lt;/a-entity>
+      </code></pre>
+    </section>
+    <section>
+      <h2>Components</h2>
+      <p style="font-size: .6em">
+<code style="display: inline-block">blend-model</code>
+<code style="display: inline-block">camera</code>
+<code style="display: inline-block">collada-model</code>
+<code style="display: inline-block">cursor</code>
+<code style="display: inline-block">debug</code>
+<code style="display: inline-block">embedded</code>
+<code style="display: inline-block">fog</code>
+<code style="display: inline-block">geometry</code>
+<code style="display: inline-block">gltf-model</code>
+<code style="display: inline-block">hand-controls</code>
+<code style="display: inline-block">keyboard-shortcuts</code>
+<code style="display: inline-block">light</code>
+<code style="display: inline-block">look-controls</code>
+<code style="display: inline-block">material</code>
+<code style="display: inline-block">obj-model</code>
+<code style="display: inline-block">oculus-touch-controls</code>
+<code style="display: inline-block">pool</code>
+<code style="display: inline-block">position</code>
+<code style="display: inline-block">raycaster</code>
+<code style="display: inline-block">rotation</code>
+<code style="display: inline-block">scale</code>
+<code style="display: inline-block">screenshot</code>
+<code style="display: inline-block">sound</code>
+<code style="display: inline-block">stats</code>
+<code style="display: inline-block">text</code>
+<code style="display: inline-block">tracked-controls</code>
+<code style="display: inline-block">visible</code>
+<code style="display: inline-block">vive-controls</code>
+<code style="display: inline-block">vr-mode-ui</code>
+<code style="display: inline-block">wasd-controls</code>
+      </p>
+    </section>
+    <section>
+      <img style="mix-blend-mode:multiply;filter:brightness(110%)" src="img/oculus.jpg">
+    </section>
+    <section>
+      <img src="img/htc-vive.png">
+    </section>
+    <section>
+      <img style="mix-blend-mode:multiply" src="img/daydream.jpg">
+    </section>
+    <section>
+      <img style="mix-blend-mode:multiply" src="img/gyros.png">
+    </section>
+    <section>
+      <img style="mix-blend-mode:multiply" src="img/Google-Cardboard.jpg">
+    </section>
+
+    <section>
+      <img style="mix-blend-mode:multiply;max-width:80%;" src="img/drupal_logo.png">
+    </section>
+
+    <section>
+      <h4><a href="https://www.drupal.org/project/aframe">drupal.org/project/aframe</a></h4>
+
+    </section>
+
+    <section>
+      <img style="max-height: 80%" src="img/DrupalVR.png">
+      <h2>DrupalVR</h2>
+    </section>
+
+    <section>
+      <h1>Web<i style="background: #ff0;">AR</i>?</h1>
+    </section>
+
+    <section style="font-size: 2em">
+      <h2>Thanks!</h2>
+      <div>
+        <b>Say Hello!</b>
+        <a href="https://twitter.com/potch/">@potch</a>
+      </div>
+      <div>
+        <b>WebVR Rocks</b>
+        <a href="https://webvr.rocks/">webvr.rocks/</a>
+      </div>
+      <div>
+        <b>A-Frame Docs</b>
+        <a href="https://aframe.io/docs/">aframe.io/docs/</a>
+      </div>
+      <div>
+        <b>Example CodePen</b>
+        <a href="https://aframe.io/aframe-school/">aframe.io/aframe-school/</a>
+      </div>
+      <div>
+        <b>Made With A-Frame</b>
+        <a href="https://aframevr.tumblr.com/">https://aframevr.tumblr.com/</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="progress talk-progress"></div>
+      <div class="progress time-progress"></div>
+    </footer>
+    <script src="decky.js"></script>
+    <script>
+
+      var els = document.querySelectorAll('code[data-src]');
+      Array.from(els).forEach(function (el) {
+        var xhr = new XMLHttpRequest();
+        xhr.addEventListener("load", function () {
+          el.innerHTML = this.responseText.replace(/</g, '&lt;');
+          hljs.highlightBlock(el);
+        });
+        xhr.open("GET", el.getAttribute('data-src'));
+        xhr.send();
+      });
+
+      var iframes = document.querySelectorAll('iframe');
+      iframes = Array.from(iframes);
+      iframes.forEach(function (i) {
+        var src = i.src;
+        i.setAttribute('data-src', src);
+        i.src = '';
+      });
+
+      var talkProgress = document.querySelector('.talk-progress');
+      var timeProgress = document.querySelector('.time-progress');
+      var sTime;
+      var timer;
+      var going = false;
+      decky.onSlideChange = function (n) {
+        if (n > 1 && !going) {
+          going = true;
+          timer = setInterval(update, 100);
+          sTime = Date.now();
+          console.log('starting timer');
+        }
+
+        var pct = n / decky.num * 100;
+        talkProgress.style.transform = 'translate(' + pct + '%, 0)';
+
+        iframes.forEach(function (i) {
+          i.src = '';
+        });
+
+        var f = document.querySelector('.active iframe');
+        if (f && window.top === window) {
+          f.src = f.getAttribute('data-src');
+        }
+      };
+      function update() {
+        var time = Math.min(100, ((Date.now() - sTime) / (40 * 60 * 1000)) * 100);
+        timeProgress.style.transform = 'translate(' + time + '%, 0)';
+      }
+    </script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
